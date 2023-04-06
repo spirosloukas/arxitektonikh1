@@ -13,14 +13,20 @@ main:
 li $v0,5
 syscall
 
-add $a0,$v0,$0
+add $t0,$v0,$0
 
+li $v0,5
 syscall
 
-add $a0,$a0,$v0
+add $t1,$v0,$0
 
+add $a0,$t0,$t1
 
 li $v0,1
+syscall
+
+sub $a0,$t0,$t1
+
 syscall
 
 li $v0,10
