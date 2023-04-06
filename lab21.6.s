@@ -5,20 +5,22 @@
 # #
 ###################################################
 
-## 1.4 exercise
+## 1.5 exercise
 .text
 .globl main
 main:
 
-li $v0,8
-la $a0,str
+li $v0,5
 syscall
 
-li $v0,4
+add $a0,$v0,$0
+
 syscall
-sb $0,5($a0)
+
+add $a0,$a0,$v0
 
 
+li $v0,1
 syscall
 
 li $v0,10
@@ -30,7 +32,7 @@ syscall # au revoir...
 #################################################
 .data
 endl: .asciiz "\n"
-str: .space 20
+
 #################################################
 # #
 # End of File #
