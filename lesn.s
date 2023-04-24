@@ -30,7 +30,13 @@ syscall # au revoir...
 #################################################
 .data
 endl: .asciiz "\n"
-str: .space 20
+str0: .asciiz " \n"
+str1: .asciiz "  \n"
+str2: .asciiz "   \n"
+str3: .asciiz "    \n"
+str4: .asciiz "     \n"
+str5: .asciiz "      \n"
+str: .space 21
 #################################################
 # #
 # End of File #

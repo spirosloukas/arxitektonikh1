@@ -8,7 +8,8 @@
 ## 1.4 exercise
 .text
 .globl main
-main:
+
+
 
 li $v0,8
 la $a0,str
@@ -30,7 +31,7 @@ syscall # au revoir...
 #################################################
 .data
 endl: .asciiz "\n"
-str: .space 20
+str: .space 21
 #################################################
 # #
 # End of File #
