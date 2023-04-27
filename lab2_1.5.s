@@ -13,7 +13,9 @@ main:
 li $v0,5
 syscall
 
-move $a0, $v0 #la $a0, 0($v0) <-(works but pilot said no)
+move $a0, $v0
+
+
 li $v0,1
 
 syscall

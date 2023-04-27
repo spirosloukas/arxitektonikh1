@@ -10,6 +10,23 @@
 .globl main
 main:
 
+lw $a0,num
+
+srl $t0, $a0 ,24        # byte : 12
+
+sll $t1, $a0 ,8         #byte : 34
+srl $t1, $t1 ,24
+sll $t1, $t1 ,8
+
+sll $t2, $a0,16         #byte : 56
+srl $t2, $t2,24
+sll $t2, $t2,16
+
+sll $t3, $a0,24         #byte :78
+
+or $t5, $t0, $t1
+or $t6, $t2, $t3
+or $a0, $t5, $t6
 
 
 
