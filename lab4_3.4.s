@@ -21,7 +21,7 @@ li $v0,4
 syscall
 
 loop:
-    lb $t0,0($a0)
+    lbu $t0,0($a0)
     beq $t0, $zero, end
     blt $t0, 97,nchar
     bgt $t0, 122,nchar

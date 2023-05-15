@@ -25,7 +25,7 @@ div $t1, $s0
 
 mfhi $t2
 
-bne $t2,$zero, case1
+bne $t2, $zero, case1
 
 #addi $t7, $t7, 1
 
